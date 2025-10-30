@@ -344,7 +344,7 @@ const App = () => {
           </nav>
 
           {activePage === 'about' && (
-            <article className="about active" data-page="about">
+            <article className="about active" data-page="about" style={{display: 'block'}}>
               <header>
                 <h2 className="h2 article-title">About me</h2>
               </header>
@@ -452,7 +452,7 @@ const App = () => {
           )}
 
           {activePage === 'resume' && (
-            <article className="resume" data-page="resume">
+            <article className="resume" data-page="resume" style={{display: 'block'}}>
               <header>
                 <h2 className="h2 article-title">Resume</h2>
               </header>
@@ -575,7 +575,7 @@ const App = () => {
           )}
 
           {activePage === 'portfolio' && (
-            <article className="portfolio" data-page="portfolio">
+            <article className="portfolio" data-page="portfolio" style={{display: 'block'}}>
               <header>
                 <h2 className="h2 article-title">Projects</h2>
               </header>
@@ -666,7 +666,7 @@ const App = () => {
           )}
 
           {activePage === 'certification' && (
-            <article className="blog" data-page="blog">
+            <article className="blog" data-page="blog" style={{display: 'block'}}>
               <header>
                 <h2 className="h2 article-title">Certification</h2>
               </header>
@@ -699,7 +699,7 @@ const App = () => {
           )}
 
           {activePage === 'contact' && (
-            <article className="contact" data-page="contact">
+            <article className="contact" data-page="contact" style={{display: 'block'}}>
               <header>
                 <h2 className="h2 article-title">Contact</h2>
               </header>
@@ -786,7 +786,7 @@ const App = () => {
 
       {/* Ionicons script */}
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </div>
   );
 };
