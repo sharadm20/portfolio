@@ -134,6 +134,43 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// add submit event to form
+form.addEventListener("submit", function (e) {
+  // Prevent the default form submission
+  e.preventDefault();
+  
+  // Get form data
+  const formData = new FormData(form);
+  
+  // Show a temporary success message or handle the submission
+  fetch(form.getAttribute('action'), {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      // Show success message
+      alert('Your message has been sent successfully!');
+      form.reset(); // Reset the form
+      formBtn.setAttribute("disabled", ""); // Disable the button again
+    } else {
+      return response.json().then(data => {
+        if (Object.hasOwnProperty.call(data, 'errors')) {
+          alert(data.errors.map(error => error.message).join(', '));
+        } else {
+          alert('There was a problem sending your message. Please try again.');
+        }
+      });
+    }
+  })
+  .catch(error => {
+    alert('There was a problem sending your message. Please try again.');
+  });
+});
+
 
 
 // page navigation variables

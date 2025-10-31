@@ -1,0 +1,221 @@
+/*-----------------------------------*\
+  #CIMPLIC-THEME.CSS - SAFE VERSION
+\*-----------------------------------*/
+
+/**
+ * Modern tech-inspired theme based on cimplic.com design elements
+ * This version focuses on color and typography enhancements only
+ */
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY - CIMPLIC THEME COLORS
+\*-----------------------------------*/
+
+:root {
+  /**
+   * colors - inspired by cimplic.com
+   */
+
+  /* Updated primary blue color based on cimplic.com */
+  --modern-blue: hsl(204, 91%, 50%);
+  --modern-blue-light: hsl(204, 91%, 60%);
+  --modern-blue-dark: hsl(204, 91%, 40%);
+  --success-green: hsl(120, 65%, 40%);
+  --amber-accent: hsl(45, 100%, 55%);
+  
+  /* Updated gradients based on cimplic.com aesthetic */
+  --text-gradient-blue: linear-gradient(
+    to right, 
+    hsl(204, 91%, 50%), 
+    hsl(204, 91%, 40%)
+  );
+  
+  /* Light theme versions */
+  --light-modern-blue: hsl(204, 91%, 45%);
+  --light-modern-blue-light: hsl(204, 91%, 55%);
+  --light-success-green: hsl(120, 65%, 60%);
+  --light-text-gradient-blue: linear-gradient(
+    to right, 
+    hsl(204, 91%, 45%), 
+    hsl(204, 91%, 35%)
+  );
+
+  /* Enhanced shadow values */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+
+  /* Transition enhancements */
+  --transition-2: 0.3s ease-in-out;
+  --transition-3: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #COLOR ENHANCEMENTS
+\*-----------------------------------*/
+
+/* Enhanced article title with cimplic.com blue */
+.article-title::after {
+  background: var(--text-gradient-blue) !important;
+}
+
+/* Enhanced navbar link active state with cimplic.com blue */
+.navbar-link.active { 
+  color: var(--modern-blue-light) !important;
+}
+
+.navbar-link.active::after {
+  background: var(--modern-blue) !important;
+}
+
+/* Enhanced service item hover effect */
+.service-item:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: var(--shadow-3) !important;
+}
+
+/* Enhanced project card hover effect */
+.project-item > a:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* Enhanced button styling with cimplic.com blue */
+.form-btn {
+  background: var(--border-gradient-onyx) !important;
+  color: var(--modern-blue-light) !important;
+}
+
+.form-btn:hover { 
+  background: var(--bg-gradient-yellow-1) !important;
+  color: white !important;
+}
+
+/* Enhanced form input focus state with cimplic.com blue */
+.form-input:focus { 
+  border-color: var(--modern-blue) !important;
+  box-shadow: 0 0 0 2px rgba(64, 156, 255, 0.3) !important;
+}
+
+/* Enhanced timeline item hover effect */
+.timeline-item:hover {
+  border-left-color: var(--modern-blue) !important;
+}
+
+.timeline-item::before {
+  background: var(--modern-blue) !important;
+}
+
+/* Enhanced skills progress bar styling */
+.skill-progress-fill {
+  background: var(--text-gradient-blue) !important;
+}
+
+.skill-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: progress-shine 2s infinite;
+}
+
+@keyframes progress-shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Enhanced icon box styling */
+.icon-box {
+  background: var(--border-gradient-onyx) !important;
+  color: var(--modern-blue) !important;
+}
+
+.icon-box:hover {
+  background: var(--bg-gradient-yellow-1) !important;
+  color: var(--white-1) !important;
+}
+
+/* Enhanced testimonials item hover */
+.testimonials-item:hover {
+  border-color: var(--modern-blue) !important;
+  box-shadow: var(--shadow-2) !important;
+}
+
+/* Enhanced client item hover */
+.clients-item img:hover { 
+  border-color: var(--modern-blue) !important;
+  box-shadow: var(--shadow-2) !important;
+}
+
+/* Enhanced blog post item hover */
+.blog-post-item > a:hover {
+  box-shadow: var(--shadow-3) !important;
+  border-color: var(--modern-blue) !important;
+}
+
+/*-----------------------------------*\
+  #LIGHT THEME ENHANCEMENTS
+\*-----------------------------------*/
+
+body.light-theme .navbar-link.active { 
+  color: var(--light-modern-blue) !important; 
+}
+
+body.light-theme .timeline-item:hover {
+  border-left-color: var(--light-modern-blue) !important;
+}
+
+body.light-theme .timeline-item::before {
+  background: var(--light-modern-blue) !important;
+}
+
+body.light-theme .testimonials-item:hover {
+  border-color: var(--light-modern-blue) !important;
+}
+
+body.light-theme .clients-item img:hover { 
+  border-color: var(--light-modern-blue) !important;
+  box-shadow: var(--shadow-2) !important;
+}
+
+/*-----------------------------------*\
+  #TYPOGRAPHY ENHANCEMENTS
+\*-----------------------------------*/
+
+/* Bolder headings */
+.h2, .h3, .h4, .h5 {
+  font-weight: var(--fw-600) !important;
+}
+
+/* Enhanced font sizing */
+.article-title {
+  font-size: var(--fs-1) !important;
+}
+
+/* Enhanced card titles */
+.service-item-title,
+.project-title,
+.blog-item-title {
+  color: var(--modern-blue-light) !important;
+}
+
+/*-----------------------------------*\
+  #RESPONSIVE ENHANCEMENTS
+\*-----------------------------------*/
+
+@media (min-width: 1024px) {
+  .sidebar, article {
+    box-shadow: var(--shadow-5) !important;
+  }
+}

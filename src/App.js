@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './assets/css/style.css';
+import './assets/css/cimplic-theme.css';
 
 const App = () => {
   const [activePage, setActivePage] = useState('about');
@@ -8,6 +9,12 @@ const App = () => {
   const [theme, setTheme] = useState('dark-theme');
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedTestimonial, setSelectedTestimonial] = useState(null);
+  const [formState, setFormState] = useState({
+    fullname: '',
+    email: '',
+    message: '',
+    submitting: false
+  });
 
   // Projects data
   const projects = [
@@ -170,6 +177,54 @@ const App = () => {
       link: 'https://github.com/sharadm20/reactjs-interview-questions'
     }
   ];
+
+  // Handle form input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormState(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormState(prevState => ({ ...prevState, submitting: true }));
+
+    try {
+      const formData = new FormData(e.target);
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID_HERE', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        alert('Your message has been sent successfully!');
+        // Reset form
+        setFormState({
+          fullname: '',
+          email: '',
+          message: '',
+          submitting: false
+        });
+      } else {
+        const result = await response.json();
+        if (result.errors) {
+          alert(result.errors.map(error => error.message).join(', '));
+        } else {
+          alert('There was a problem sending your message. Please try again.');
+        }
+        setFormState(prevState => ({ ...prevState, submitting: false }));
+      }
+    } catch (error) {
+      alert('There was a problem sending your message. Please try again.');
+      setFormState(prevState => ({ ...prevState, submitting: false }));
+    }
+  };
 
   // Toggle theme
   const toggleTheme = () => {
@@ -719,13 +774,15 @@ const App = () => {
               <section className="contact-form">
                 <h3 className="h3 form-title">Contact Form</h3>
 
-                <form className="form" data-form>
+                <form onSubmit={handleSubmit} className="form" data-form>
                   <div className="input-wrapper">
                     <input 
                       type="text" 
                       name="fullname" 
                       className="form-input" 
                       placeholder="Full name" 
+                      value={formState.fullname}
+                      onChange={handleInputChange}
                       required 
                     />
                     <input 
@@ -733,6 +790,8 @@ const App = () => {
                       name="email" 
                       className="form-input" 
                       placeholder="Email address" 
+                      value={formState.email}
+                      onChange={handleInputChange}
                       required 
                     />
                   </div>
@@ -741,12 +800,14 @@ const App = () => {
                     name="message" 
                     className="form-input" 
                     placeholder="Your Message" 
+                    value={formState.message}
+                    onChange={handleInputChange}
                     required
                   ></textarea>
 
-                  <button className="form-btn" type="submit">
+                  <button className="form-btn" type="submit" disabled={formState.submitting}>
                     <ion-icon name="paper-plane"></ion-icon>
-                    <span>Send Message</span>
+                    <span>{formState.submitting ? 'Sending...' : 'Send Message'}</span>
                   </button>
                 </form>
               </section>

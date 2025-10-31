@@ -23,51 +23,52 @@
 
   /* gradient */
 
+  /* Updated gradient colors inspired by modern design trends */
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(214, 100%, 27%) 3%, 
+    hsl(212, 100%, 15%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(212, 100%, 20%, 0.251) 0%, 
+    hsla(212, 100%, 10%, 0) 100%
+  ), hsl(212, 100%, 12%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsl(204, 91%, 53%) 0%, 
+    hsla(204, 91%, 53%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    hsla(204, 91%, 53%, 0.251) 0%, 
+    hsla(204, 91%, 53%, 0) 59.86%
+  ), hsl(212, 100%, 12%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    hsl(210, 100%, 35%) 0%, 
+    hsla(210, 100%, 35%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(204, 91%, 53%), 
+    hsl(204, 91%, 40%)
   );
 
   /* solid */
-
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  /* Modern color palette inspired by cimplic.com style */
+  --jet: hsl(210, 100%, 22%);
+  --onyx: hsl(210, 100%, 17%);
+  --eerie-black-1: hsl(210, 100%, 13%);
+  --eerie-black-2: hsl(210, 100%, 12%);
+  --smoky-black: hsl(210, 100%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --orange-yellow-crayola: hsl(204, 91%, 53%); /* Modern blue accent */
+  --vegas-gold: hsl(204, 85%, 60%);
+  --light-gray: hsl(210, 20%, 84%);
+  --light-gray-70: hsla(210, 20%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(348, 83%, 66%); /* Modern red accent */
 
   /* light theme colors */
   --light-bg-gradient-onyx: linear-gradient(
@@ -82,36 +83,36 @@
   ), hsl(0, 0%, 92%);
   --light-bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 50%) 0%, 
-    hsla(36, 100%, 60%, 0) 50%
+    hsl(204, 91%, 45%) 0%, 
+    hsla(204, 91%, 45%, 0) 50%
   );
   --light-bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 50%, 0.251) 0%, 
-    hsla(35, 100%, 60%, 0) 59.86%
+    hsla(204, 91%, 45%, 0.251) 0%, 
+    hsla(204, 91%, 45%, 0) 59.86%
   ), hsl(0, 0%, 92%);
   --light-border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 75%) 0%, 
-    hsla(0, 0%, 75%, 0) 50%
+    hsl(204, 91%, 70%) 0%, 
+    hsla(204, 91%, 70%, 0) 50%
   );
   --light-text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 50%), 
-    hsl(35, 100%, 45%)
+    hsl(204, 91%, 45%), 
+    hsl(204, 91%, 35%)
   );
-  --light-jet: hsl(0, 0%, 78%);
-  --light-onyx: hsl(0, 0%, 83%);
-  --light-eerie-black-1: hsl(0, 0%, 87%);
-  --light-eerie-black-2: hsl(0, 0%, 88%);
-  --light-smoky-black: hsl(0, 0%, 93%);
+  --light-jet: hsl(210, 20%, 78%);
+  --light-onyx: hsl(210, 20%, 83%);
+  --light-eerie-black-1: hsl(210, 20%, 87%);
+  --light-eerie-black-2: hsl(210, 20%, 88%);
+  --light-smoky-black: hsl(210, 20%, 93%);
   --light-white-1: hsl(0, 0%, 0%);
   --light-white-2: hsl(0, 0%, 2%);
-  --light-orange-yellow-crayola: hsl(45, 100%, 50%);
-  --light-vegas-gold: hsl(45, 54%, 42%);
-  --light-light-gray: hsl(0, 0%, 16%);
-  --light-light-gray-70: hsla(0, 0%, 16%, 0.7);
-  --light-bittersweet-shimmer: hsl(0, 43%, 49%);
+  --light-orange-yellow-crayola: hsl(204, 91%, 45%);
+  --light-vegas-gold: hsl(204, 85%, 42%);
+  --light-light-gray: hsl(210, 20%, 16%);
+  --light-light-gray-70: hsla(210, 20%, 16%, 0.7);
+  --light-bittersweet-shimmer: hsl(348, 83%, 49%);
 
   /**
    * typography
@@ -219,10 +220,17 @@ body.light-theme {
 article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
-  border-radius: 20px;
-  padding: 15px;
+  border-radius: 24px; /* More rounded corners */
+  padding: 25px; /* Increased padding for better spacing */
   box-shadow: var(--shadow-1);
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.sidebar:hover,
+article:hover {
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+  box-shadow: var(--shadow-2); /* Enhanced shadow on hover */
 }
 
 .separator {
@@ -235,16 +243,22 @@ article {
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
+  width: 36px; /* Slightly larger */
+  height: 36px; /* Slightly larger */
+  border-radius: 10px; /* More rounded */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px; /* Slightly larger icon */
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.icon-box:hover {
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: var(--shadow-2); /* Enhanced shadow on hover */
 }
 
 .icon-box::before {
@@ -256,7 +270,7 @@ article {
   z-index: -1;
 }
 
-.icon-box ion-icon { --ionicon-stroke-width: 35px; }
+.icon-box ion-icon { --ionicon-stroke-width: 40px; } /* Thicker stroke for better visibility */
 
 article { display: none; }
 
@@ -291,7 +305,8 @@ article.active {
 
 .article-title {
   position: relative;
-  padding-bottom: 7px;
+  padding-bottom: 12px; /* Increased spacing */
+  margin-bottom: 25px; /* More bottom margin */
 }
 
 .article-title::after {
@@ -299,10 +314,15 @@ article.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
-  height: 3px;
+  width: 45px; /* Longer line */
+  height: 4px; /* Thicker line */
   background: var(--text-gradient-yellow);
-  border-radius: 3px;
+  border-radius: 4px; /* More rounded */
+  transition: width 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.article-title:hover::after {
+  width: 60px; /* Extended line on hover */
 }
 
 .has-scrollbar::-webkit-scrollbar {
@@ -325,12 +345,18 @@ article.active {
 .content-card {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 15px;
-  padding-top: 45px;
-  border-radius: 14px;
+  padding: 20px; /* Increased padding for better spacing */
+  padding-top: 50px; /* Increased top padding */
+  border-radius: 16px; /* Slightly more rounded corners */
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.content-card:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+  box-shadow: var(--shadow-3); /* Enhanced shadow on hover */
 }
 
 .content-card::before {
@@ -365,13 +391,14 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  margin-bottom: 15px;
-  max-height: 112px;
+  margin-bottom: 20px; /* Increased spacing */
+  max-height: 120px; /* Slightly taller */
   overflow: hidden;
-  transition: var(--transition-2);
+  transition: all 0.4s ease; /* Enhanced transition */
+  box-shadow: var(--shadow-2); /* Enhanced shadow */
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 450px; /* Increased for more content */ }
 
 .sidebar-info {
   position: relative;
@@ -406,16 +433,18 @@ main {
 
 .info_more-btn {
   position: absolute;
-  top: -15px;
-  right: -15px;
-  border-radius: 0 15px;
-  font-size: 13px;
+  top: -18px; /* Slightly more inset */
+  right: -18px; /* Slightly more inset */
+  border-radius: 0 16px; /* More rounded */
+  font-size: 14px; /* Slightly larger font */
+  font-weight: var(--fw-500); /* Bolder text */
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
-  padding: 10px;
+  padding: 12px 16px; /* Increased padding */
   box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
+  transition: all 0.3s ease; /* Enhanced transition */
   z-index: 1;
+  cursor: pointer; /* Make it clear it's clickable */
 }
 
 .info_more-btn::before {
@@ -429,7 +458,11 @@ main {
 }
 
 .info_more-btn:hover,
-.info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
+.info_more-btn:focus { 
+  background: var(--bg-gradient-yellow-1); 
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: var(--shadow-3); /* Enhanced shadow on hover */
+}
 
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
@@ -528,14 +561,39 @@ main {
 .navbar-link {
   color: var(--light-gray);
   font-size: var(--fs-8);
+  font-weight: var(--fw-500); /* Bolder font for better visibility */
   padding: 20px 7px;
-  transition: color var(--transition-1);
+  transition: all 0.3s ease; /* Apply transition to all properties */
+  position: relative; /* For adding active indicator */
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--orange-yellow-crayola);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { 
+  color: var(--orange-yellow-crayola); 
+}
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link:hover::after,
+.navbar-link:focus::after,
+.navbar-link.active::after {
+  width: 70%;
+}
+
+.navbar-link.active { 
+  color: var(--orange-yellow-crayola); 
+  font-weight: var(--fw-600); /* Even bolder for active state */
+}
 
 
 
@@ -575,10 +633,16 @@ main {
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 20px;
-  border-radius: 14px;
+  padding: 25px; /* Increased padding */
+  border-radius: 16px; /* More rounded corners */
   box-shadow: var(--shadow-2);
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.service-item:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+  box-shadow: var(--shadow-3); /* Enhanced shadow on hover */
 }
 
 .service-item::before {
@@ -631,6 +695,11 @@ main {
 .testimonials-item {
   min-width: 100%;
   scroll-snap-align: center;
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.testimonials-item:hover {
+  transform: translateY(-3px); /* Subtle lift on testimonials card hover */
 }
 
 .testimonials-avatar-box {
@@ -643,7 +712,10 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.testimonials-item-title { 
+  margin-bottom: 7px; 
+  color: var(--orange-yellow-crayola); /* Use accent color for titles */
+}
 
 .testimonials-text {
   color: var(--light-gray);
@@ -800,11 +872,17 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
+  filter: grayscale(1) opacity(0.7); /* More subtle grayscale */
+  transition: all 0.3s ease; /* Enhanced transition */
+  border-radius: 8px; /* Add slight rounding */
+  padding: 8px; /* Add padding for better spacing */
+  background: var(--eerie-black-1); /* Add background for consistency */
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { 
+  filter: grayscale(0) opacity(1); /* Remove grayscale and full opacity */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
 
 
 
@@ -1006,10 +1084,15 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 220px; /* Increased height for better aspect ratio */
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.project-item > a:hover .project-img {
+  transform: translateY(-5px); /* Lift effect on project card hover */
 }
 
 .project-img::before {
@@ -1065,15 +1148,22 @@ main {
 .project-title {
   color: var(--white-2);
   font-size: var(--fs-5);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-500); /* Slightly bolder */
   text-transform: capitalize;
   line-height: 1.3;
+  transition: color 0.3s ease; /* Add transition for hover effect */
+}
+
+.project-title:hover {
+  color: var(--orange-yellow-crayola); /* Accent color on hover */
 }
 
 .project-category {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400); /* Slightly bolder */
+  text-transform: uppercase; /* Uppercase for modern look */
+  letter-spacing: 0.5px; /* Add slight spacing */
 }
 
 
@@ -1099,6 +1189,12 @@ main {
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.blog-post-item > a:hover {
+  transform: translateY(-5px); /* Lift effect on blog card hover */
+  box-shadow: var(--shadow-5); /* Enhanced shadow on hover */
 }
 
 .blog-post-item > a::before {
@@ -1151,11 +1247,15 @@ main {
 
 .blog-item-title {
   margin-bottom: 10px;
-  line-height: 1.3;
-  transition: var(--transition-1);
+  line-height: 1.4; /* Slightly increased line height */
+  transition: all 0.3s ease; /* Enhanced transition */
+  font-weight: var(--fw-500); /* Slightly bolder */
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.blog-post-item > a:hover .blog-item-title { 
+  color: var(--orange-yellow-crayola); 
+  transform: translateX(5px); /* Slight movement on hover */
+}
 
 .blog-text {
   color: var(--light-gray);
@@ -1206,15 +1306,24 @@ main {
   color: var(--white-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
-  padding: 13px 20px;
+  padding: 15px 20px; /* Increased padding */
   border: 1px solid var(--jet);
-  border-radius: 14px;
+  border-radius: 16px; /* More rounded */
   outline: none;
+  background: var(--eerie-black-1); /* Added background for consistency */
+  transition: all 0.3s ease; /* Enhanced transition */
 }
 
-.form-input::placeholder { font-weight: var(--fw-500); }
+.form-input::placeholder { 
+  color: var(--light-gray-70); /* Better placeholder color */
+  font-weight: var(--fw-500); 
+}
 
-.form-input:focus { border-color: var(--orange-yellow-crayola); }
+.form-input:focus { 
+  border-color: var(--orange-yellow-crayola); 
+  box-shadow: 0 0 0 2px rgba(32, 128, 224, 0.2); /* Added subtle glow */
+  background: var(--eerie-black-2); /* Slightly different bg on focus */
+}
 
 textarea.form-input {
   min-height: 100px;
@@ -1237,13 +1346,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 13px 20px;
-  border-radius: 14px;
+  padding: 15px 20px; /* Increased padding for better touch targets */
+  border-radius: 16px; /* More rounded */
   font-size: var(--fs-6);
+  font-weight: var(--fw-500); /* Slightly bolder font */
   text-transform: capitalize;
   box-shadow: var(--shadow-3);
   z-index: 1;
-  transition: var(--transition-1);
+  transition: all 0.3s ease; /* Enhanced transition */
+  border: 1px solid transparent; /* Added border for consistency */
 }
 
 .form-btn::before {
@@ -1256,9 +1367,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   transition: var(--transition-1);
 }
 
-.form-btn ion-icon { font-size: 16px; }
+.form-btn ion-icon { font-size: 18px; } /* Slightly larger icon */
 
-.form-btn:hover { background: var(--bg-gradient-yellow-1); }
+.form-btn:hover { 
+  background: var(--bg-gradient-yellow-1); 
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: var(--shadow-4); /* Enhanced shadow on hover */
+}
 
 .form-btn:hover::before { background: var(--bg-gradient-yellow-2); }
 
@@ -2012,10 +2127,17 @@ body.light-theme .mapbox {
 body.light-theme .form-input {
   color: var(--light-white-2);
   border: 1px solid var(--light-jet);
+  background: var(--light-eerie-black-1); /* Match dark theme */
+}
+
+body.light-theme .form-input::placeholder { 
+  color: var(--light-light-gray-70); 
 }
 
 body.light-theme .form-input:focus { 
   border-color: var(--light-orange-yellow-crayola); 
+  box-shadow: 0 0 0 2px rgba(32, 128, 224, 0.2); /* Match dark theme */
+  background: var(--light-eerie-black-2); /* Match dark theme */
 }
 
 body.light-theme .form-input:focus:invalid { 
